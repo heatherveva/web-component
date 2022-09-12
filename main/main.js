@@ -19,20 +19,10 @@ class SearchResult extends HTMLElement {
     this.attachShadow({ mode: "open" });
 
     this.shadowRoot.appendChild(template.content.cloneNode(true));
-
-    this.shadowRoot.querySelector("a").href = "";
   }
 
   static get observedAttributes() {
     return ["name-attribute"];
-  }
-
-  attributeChangedCallback(name, oldValue, newValue) {
-    if (name == "name-attribute") {
-      this.shadowRoot.querySelector(
-        "a"
-      ).href = `https://www.google.com/search?q=${newValue}`;
-    }
   }
 }
 
