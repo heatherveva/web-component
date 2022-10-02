@@ -15,7 +15,7 @@ template.innerHTML = `
   </div>
 `;
 
-class SearchResult extends HTMLElement {
+class MyComponent extends HTMLElement {
   constructor() {
     super();
 
@@ -25,4 +25,4 @@ class SearchResult extends HTMLElement {
   }
 }
 
-window.customElements.define("search-result", SearchResult);
+window.customElements.define("my-component", MyComponent);
