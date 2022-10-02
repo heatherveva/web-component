@@ -2,13 +2,14 @@ const template = document.createElement("template");
 template.innerHTML = `
   <style>
     button {
+      background-color: #CB3036;
       border-style: none;
-      margin-top: 20px;
+      border-radius: 5px;
       color: white;
       font-weight: bold;
-      background-color: #CB3036;
       font-style: bold;
       font-family: Arial, Helvetica, sans-serif;
+      margin-top: 20px;
       padding: 10px 25px 10px 25px;
     }
   </style>
