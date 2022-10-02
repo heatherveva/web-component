@@ -1,14 +1,17 @@
 const template = document.createElement("template");
 template.innerHTML = `
   <style>
-    div {
+    button {
       margin-top: 20px;
-      color: purple;
+      color: white;
       font-weight: bold;
+      background-color: black;
     }
   </style>
   <div>
- <p>Web Component</p>
+  <a href="https://www.google.com" target="_blank">
+ <button>SEARCH</button>
+ </a>
   </div>
 `;
 
@@ -19,10 +22,6 @@ class SearchResult extends HTMLElement {
     this.attachShadow({ mode: "open" });
 
     this.shadowRoot.appendChild(template.content.cloneNode(true));
-  }
-
-  static get observedAttributes() {
-    return ["name-attribute"];
   }
 }
 
